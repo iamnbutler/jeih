@@ -1,0 +1,250 @@
+// Reset
+
+@import "_reset.scss";
+
+// Typography
+
+@import "_typography.scss";
+
+// Styles
+
+html, body {
+	width: 100%;
+	min-height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-color: white;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	@media only screen and (max-width : 1340px) {
+		width: 800px;
+	}
+	@media only screen and (max-width : 1100px) {
+		width: 560px;
+	}
+
+	@media only screen and (max-width : 840px) {
+		width: 100%;
+	}
+}
+
+// Sections
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	height: 100%;
+	width: 240px;
+	background-color: white;
+	border-right: 1px solid #E5E5E5;
+	opacity: 0.6;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	@media only screen and (max-width : 1600px) {
+		width: 180px;
+	}
+	@media only screen and (max-width : 1180px) {
+		width: 140px;
+	}
+	.nav {
+		margin-top: 264px;
+		margin-left: 80px;
+		-webkit-transition: 0.4s;
+		-moz-transition: 0.4s;
+		-o-transition: 0.4s;
+		transition: 0.4s;
+		@media only screen and (max-width : 1600px) {
+			margin-left: 40px;
+		}
+		@media only screen and (max-width : 1180px) {
+			margin-left: 20px;
+		}
+		li {
+			color: #555;
+			text-align: right;
+			padding-right: 26px;
+			font-size: 14px;
+			text-transform: lowercase;
+			line-height: 42px;
+			border-top: 2px white solid;
+			-webkit-transition: 0.4s;
+			-moz-transition: 0.4s;
+			-o-transition: 0.4s;
+			transition: 0.4s;
+		}
+		li.current {
+			background-color: #F4F4F4;
+			color: black;
+		}
+		li:hover {
+			background-color: #F4F4F4;
+			color: black;
+			-webkit-transition: 0.4s;
+			-moz-transition: 0.4s;
+			-o-transition: 0.4s;
+			transition: 0.4s;
+		}
+	}
+}
+
+.sidebar:hover {
+	opacity: 1;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.header {
+	.wrapper {
+		height: 100%;
+	}
+	.logobar {
+		padding: 60px;
+		.logo {
+			width: 120px;
+			height: 120px;
+			background-image: url("../img/logo.png");
+			background-size: 120px;
+			margin: 0 auto;
+		}
+		.logotext {
+			width: 100%;
+			margin-top: 12px;
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: 300;
+			color: #777;
+			text-align: center;
+		}
+	}
+	.nav {
+		width: 100%;
+	}
+}
+
+.body {
+	.gallery {
+		li {
+			float: left;
+			margin: 0 2.666% 5.333% 2.666%;
+			background-color: #F9F9F9;
+			width: 28%;
+			height: 360px;
+			-webkit-transition: 0.4s;
+			-moz-transition: 0.4s;
+			-o-transition: 0.4s;
+			transition: 0.4s;
+			@media only screen and (max-width : 1340px) {
+				height: 280px;
+			}
+			@media only screen and (max-width : 1100px) {
+				margin: 0 3% 6% 3%;
+				width: 44%;
+				height: 280px;
+			}
+			@media only screen and (max-width : 840px) {
+				margin: 0 15% 10% 15%;
+				width: 70%;
+				height: 340px;
+			}
+			@media only screen and (max-width : 540px) {
+				margin: 0 15% 10% 15%;
+				width: 70%;
+				height: 240px;
+			}
+			@media only screen and (max-width : 340px) {
+				margin: 0 15% 10% 15%;
+				width: 70%;
+				height: 160px;
+			}
+		}
+	}
+}
+
+// Gallery Images
+
+.gallery-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.65)
+}
+
+.gal1 {
+	background-image: url("../img/gallery-1.jpg");
+}
+
+.gal2 {
+	background-image: url("../img/gallery-2.jpg");
+}
+
+.gal3 {
+	background-image: url("../img/gallery-3.jpg");
+}
+
+.gal4 {
+	background-image: url("../img/gallery-4.jpg");
+}
+
+.gal5 {
+	background-image: url("../img/gallery-5.jpg");
+}
+
+.gal6 {
+	background-image: url("../img/gallery-6.jpg");
+}
+
+.gal7 {
+	background-image: url("../img/gallery-7.jpg");
+}
+
+.gal8 {
+	background-image: url("../img/gallery-8.jpg");
+}
+
+.gal9 {
+	background-image: url("../img/gallery-9.jpg");
+}
+
+.gal10 {
+	background-image: url("../img/gallery-10.jpg");
+}
+
+.gal11 {
+	background-image: url("../img/gallery-11.jpg");
+}
+
+// Misc
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+html[xmlns] .clearfix {
+  display: block; }
+
+* html .clearfix {
+  height: 1%; }
